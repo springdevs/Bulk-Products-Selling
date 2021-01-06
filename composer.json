@@ -1,0 +1,22 @@
+{
+    "name": "springdevs/bulk-products-selling",
+    "description": "Sell many products in one",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "SpringDevs",
+            "email": "contact@spingdevs.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Springdevs\\BPSelling\\": "includes/"
+        },
+        "files": [
+            "includes/functions.php"
+        ]
+    }
+}
