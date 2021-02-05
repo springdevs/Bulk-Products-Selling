@@ -2,6 +2,7 @@
 
 namespace Springdevs\BPSelling;
 
+use Springdevs\BPSelling\Admin\Order;
 use Springdevs\BPSelling\Admin\Product;
 use Springdevs\BPSelling\Admin\Subscription;
 
@@ -19,6 +20,7 @@ class Admin
         $this->dispatch_actions();
         new Product;
         new Subscription;
+        new Order;
     }
 
     /**
