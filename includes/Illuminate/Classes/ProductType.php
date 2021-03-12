@@ -3,6 +3,9 @@
 /**
  * Bulk Product Type
  */
+
+if(!class_exists('WC_Product_Simple')) return;
+
 class WC_Product_Bulk extends WC_Product_Simple
 {
 
