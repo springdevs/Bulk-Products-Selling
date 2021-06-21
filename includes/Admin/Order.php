@@ -1,6 +1,6 @@
 <?php
 
-namespace Springdevs\BPSelling\Admin;
+namespace Springdevs\BPS\Admin;
 
 /**
  * Admin Order Handler

@@ -1,6 +1,6 @@
 <?php
 
-namespace Springdevs\BPSelling;
+namespace Springdevs\BPS;
 
 /**
  * Scripts and Styles Class
@@ -42,7 +42,7 @@ class Assets
         foreach ($scripts as $handle => $script) {
             $deps      = isset($script['deps']) ? $script['deps'] : false;
             $in_footer = isset($script['in_footer']) ? $script['in_footer'] : false;
-            $version   = isset($script['version']) ? $script['version'] : BPSELLING_VERSION;
+            $version   = isset($script['version']) ? $script['version'] : BPS_VERSION;
 
             wp_register_script($handle, $script['src'], $deps, $version, $in_footer);
         }
@@ -60,7 +60,7 @@ class Assets
         foreach ($styles as $handle => $style) {
             $deps = isset($style['deps']) ? $style['deps'] : false;
 
-            wp_register_style($handle, $style['src'], $deps, BPSELLING_VERSION);
+            wp_register_style($handle, $style['src'], $deps, BPS_VERSION);
         }
     }
 
@@ -71,7 +71,7 @@ class Assets
      */
     public function get_scripts()
     {
-        $plugin_js_assets_path = BPSELLING_ASSETS . '/js/';
+        $plugin_js_assets_path = BPS_ASSETS . '/js/';
 
         $scripts = [];
 
@@ -85,7 +85,7 @@ class Assets
      */
     public function get_styles()
     {
-        $plugin_css_assets_path = BPSELLING_ASSETS . '/css/';
+        $plugin_css_assets_path = BPS_ASSETS . '/css/';
 
         $styles = [
             "bulk_css" => [

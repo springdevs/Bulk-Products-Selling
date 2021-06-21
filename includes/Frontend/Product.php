@@ -1,10 +1,10 @@
 <?php
 
-namespace Springdevs\BPSelling\Frontend;
+namespace Springdevs\BPS\Frontend;
 
 /**
  * Class Product
- * @package Springdevs\BPSelling\Frontend
+ * @package Springdevs\BPS\Frontend
  */
 class Product
 {
@@ -28,7 +28,7 @@ class Product
         global $product;
         if ('bulk' == $product->get_type()) {
 
-            $template_path = BPSELLING_PATH . '/templates/';
+            $template_path = BPS_PATH . '/templates/';
             // Load the template
             wc_get_template(
                 'single-product/add-to-cart/bulk.php',

@@ -1,12 +1,12 @@
 <?php
 
-namespace Springdevs\BPSelling\Admin;
+namespace Springdevs\BPS\Admin;
 
 /**
  * Product Handler
  *
  * Class Product
- * @package Springdevs\BPSelling\Admin
+ * @package Springdevs\BPS\Admin
  */
 class Product
 {

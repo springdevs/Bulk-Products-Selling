@@ -1,10 +1,10 @@
 <?php
 
-namespace Springdevs\BPSelling\Frontend;
+namespace Springdevs\BPS\Frontend;
 
 /**
  * Class Order
- * @package Springdevs\BPSelling\Frontend
+ * @package Springdevs\BPS\Frontend
  */
 class Order
 {
