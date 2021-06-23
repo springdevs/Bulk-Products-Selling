@@ -46,7 +46,7 @@ class Product
     public function save_bulk_data($post_id)
     {
         if (isset($_POST['bulk_products']) && is_array($_POST['bulk_products'])) {
-            update_post_meta($post_id, '_bpselling_bulk_products', $_POST['bulk_products']);
+            update_post_meta($post_id, '_bpselling_bulk_products', $this->sanitize_array_field($_POST['bulk_products']));
         }
     }
 
@@ -57,5 +57,27 @@ class Product
         if ('product' != $post->post_type) return;
         $is_bulk = $product_object && 'bulk' === $product_object->get_type() ? true : false;
         include_once 'views/footer-script.php';
+    }
+
+    /**
+     * Recursive sanitation an array
+     * 
+     * @param $array
+     * @since  0.1
+     * @return mixed
+     */
+    public function sanitize_array_field(array $arrays)
+    {
+        $sanitized_array = [];
+        foreach ($arrays as $key => $array) {
+            $value = false;
+            if (is_array($array)) {
+                $value = $this->sanitize_array_field($array);
+            } else {
+                $value = sanitize_text_field($array);
+            }
+            $sanitized_array[$key] = $value;
+        }
+        return $sanitized_array;
     }
 }
