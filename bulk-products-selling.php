@@ -3,7 +3,7 @@
 Plugin Name: Bulk Products Selling
 Plugin URI: https://wordpress.org/plugins/bulk-product-selling
 Description: Sell many products in one Like Group Product. But you can use single price here.
-Version: 1.0.0
+Version: 1.0.1
 Author: SpringDevs
 Author URI: https://springdevs.com/
 License: GPLv2
@@ -57,7 +57,7 @@ final class Sdevs_bps
      *
      * @var string
      */
-    const version = '1.0.0';
+    const version = '1.0.1';
 
     /**
      * Holds various class instances
