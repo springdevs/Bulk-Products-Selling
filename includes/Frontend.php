@@ -2,6 +2,7 @@
 
 namespace Springdevs\BPS;
 
+use Springdevs\BPS\Frontend\Cart;
 use Springdevs\BPS\Frontend\Order;
 use Springdevs\BPS\Frontend\Product;
 
@@ -18,6 +19,7 @@ class Frontend
         $this->dispatch_actions();
         new Product;
         new Order;
+        new Cart;
     }
 
     /**
