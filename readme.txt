@@ -41,6 +41,8 @@ Sell many products in one Like Group Product. But you can use single price here.
 
 1. Create Bulk product
 2. Bulk product view
+3. After checkout
+4. My-Account order view
  
 
 == Changelog ==
