@@ -1,10 +1,10 @@
 <?php
 
-namespace Springdevs\BPSelling;
+namespace Springdevs\BPS;
 
-use Springdevs\BPSelling\Admin\Order;
-use Springdevs\BPSelling\Admin\Product;
-use Springdevs\BPSelling\Admin\Subscription;
+use Springdevs\BPS\Admin\Order;
+use Springdevs\BPS\Admin\Product;
+use Springdevs\BPS\Admin\Subscription;
 
 /**
  * The admin class
@@ -30,6 +30,6 @@ class Admin
      */
     public function dispatch_actions()
     {
-        require_once BPSELLING_INCLUDES . '/Illuminate/Classes/ProductType.php';
+        require_once BPS_INCLUDES . '/Illuminate/Classes/ProductType.php';
     }
 }

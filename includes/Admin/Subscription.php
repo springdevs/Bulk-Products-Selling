@@ -1,12 +1,12 @@
 <?php
 
-namespace Springdevs\BPSelling\Admin;
+namespace Springdevs\BPS\Admin;
 
 /**
  * Subscription Handler
  *
  * Class Subscription
- * @package Springdevs\BPSelling\Admin
+ * @package Springdevs\BPS\Admin
  */
 class Subscription
 {

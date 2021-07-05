@@ -1,9 +1,9 @@
 <?php
 
-namespace Springdevs\BPSelling;
+namespace Springdevs\BPS;
 
-use Springdevs\BPSelling\Frontend\Order;
-use Springdevs\BPSelling\Frontend\Product;
+use Springdevs\BPS\Frontend\Order;
+use Springdevs\BPS\Frontend\Product;
 
 /**
  * Frontend handler class
@@ -27,6 +27,6 @@ class Frontend
      */
     public function dispatch_actions()
     {
-        require_once BPSELLING_INCLUDES . '/Illuminate/Classes/ProductType.php';
+        require_once BPS_INCLUDES . '/Illuminate/Classes/ProductType.php';
     }
 }
