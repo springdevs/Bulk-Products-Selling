@@ -12,6 +12,8 @@ class Order
     {
         add_action('woocommerce_checkout_create_order_line_item', [$this, 'save_order_item_product_meta'], 10, 4);
         add_filter('woocommerce_order_item_class', [$this, 'add_bulk_class_order_table'], 10, 2);
+        add_filter('woocommerce_get_item_count', [$this, 'change_order_item_count'], 10, 3);
+        add_action('woocommerce_order_item_meta_start', [$this, 'display_included_products'], 10, 3);
     }
 
     public function save_order_item_product_meta($item, $cart_item_key, $cart_item, $order)
@@ -25,5 +27,20 @@ class Order
     {
         if (isset($item['_bulk_product'])) $class .= " bulk-product-cart";
         return $class;
+    }
+
+    public function change_order_item_count($count, $item_type, $order)
+    {
+        $items = $order->get_items();
+        foreach ($items as $item) if (isset($item['_bulk_product'])) $count -= 1;
+        return $count;
+    }
+
+    public function display_included_products($item_id, $item, $order)
+    {
+        $product = $item->get_product();
+        if ($product->is_type('bulk')) :
+            include 'views/included-products.php';
+        endif;
     }
 }
