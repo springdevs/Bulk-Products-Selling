@@ -3,7 +3,7 @@ Contributors: naminbd, istiaqnirab
 Donate link:
 Tags: Bulk product , sell bulk product, woocommerce bulk products
 Requires at least: 1.0.0
-Tested up to: 5.7
+Tested up to: 5.8
 Stable tag: 1.0.1
 Requires PHP: 7.0
 License: GPLv2 or later
@@ -14,14 +14,14 @@ Sell many products in one Like Group Product. But you can use single price here.
 == Description ==
 
 Sell many products in one Like Group Product. But you can use single price here.
- 
+
 ## Features
- 
+
 1. Sell many products in one
 2. Linked Unlimited products
-3. Linked simple , variable or any type of products 
+3. Linked simple , variable or any type of products
 4. Simple & easy to use !!
- 
+
 == Installation ==
 
     = Installation from within WordPress =
@@ -43,7 +43,7 @@ Sell many products in one Like Group Product. But you can use single price here.
 2. Bulk product view
 3. After checkout
 4. My-Account order view
- 
+
 
 == Changelog ==
 
