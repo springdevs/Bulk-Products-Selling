@@ -3,7 +3,7 @@ Contributors: naminbd, istiaqnirab
 Donate link:
 Tags: Bulk product , sell bulk product, woocommerce bulk products
 Requires at least: 1.0.0
-Tested up to: 5.8
+Tested up to: 5.8.3
 Stable tag: 1.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
@@ -46,6 +46,9 @@ Sell many products in one Like Group Product. But you can use single price here.
 
 
 == Changelog ==
+
+= 1.0.2 =
+* Ok - Tested up to wordpress v5.8.3
 
 = 1.0.1 =
 * Fix - Linked products not hide from mini-cart
